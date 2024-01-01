@@ -2,17 +2,17 @@
 # This policy configuration will be used by samsung products
 #
 
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/samsung_slsi/sepolicy/common/public
 
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/samsung_slsi/sepolicy/common/private
 
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/samsung_slsi/sepolicy/common/vendor
 
 ifeq ($(BOARD_SEPOLICY_TEE_FLAVOR),teegris)
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/samsung_slsi/sepolicy/tee/teegris/public
 
 BOARD_VENDOR_SEPOLICY_DIRS += \
